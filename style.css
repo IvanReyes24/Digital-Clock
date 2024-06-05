@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Mina:wght@400;700&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Mina", sans-serif;
+}
+.hero{
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color:#fefefe;
+}
+
+.container{
+	width: 700px;
+	height: 180px;
+	position: relative;
+	
+}
+
+.clock{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	font-size: 100px;
+	background-color: rgb(1, 1, 87);
+	color: aliceblue;
+}
+
+.clock span{
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	width: 110px;
+}
+
+.clock span::after{
+	content: '';
+	font-size: 17px;
+	position: absolute;
+	bottom: 5px;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.clock #hrs::after{
+	content: 'HOURS';
+}
+.clock #min::after{
+	content: 'MINUTES';
+}
+.clock #sec::after{
+	content: 'SECONDS';
+}
